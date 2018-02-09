@@ -74,6 +74,21 @@ $(document).ready(function () {
                     alertify.success('Username disponibile');
                 }
             }
-        })
-    })
+        });
+    });
+    $("form#sign-up input[name='email']").on('keyup', function () {
+        var email_chosen = $("form#sign-up input[name='email']").val();
+        $.ajax({
+            url:'/php/choose_username.php',
+            type:'POST',
+            data:{email : email_chosen},
+            success: function (data) {
+                if (data === "Usata"){
+                    alertify.dismissAll();
+                    alertify.set('notifier','position', 'top-center');
+                    alertify.error('Un utente è già stato registrato con la seguente Email');
+                }
+            }
+        });
+    });
 });
