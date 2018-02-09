@@ -37,7 +37,7 @@ require_once('php/islogged.php');
     </div>
     <div id="Signup-div">
         <div class="div-Login">
-            <form class="col-xs-3" method="post" action="php/login.php" onSubmit="return false;">
+            <form class="col-xs-3" id="sign-up" onSubmit="return false;">
                 <div class="form-group">
                     <label for="username">Nome utente:</label>
                     <input type="text" class="form-control" id="username" placeholder="Inserisci nome utente"
@@ -62,7 +62,7 @@ require_once('php/islogged.php');
                     <input type="email" class="form-control" id="email" placeholder="Inserisci l'indirizzo mail"
                            name="email">
                 </div>
-                <button type="submit" class="btn btn-default">Registrati</button>
+                <button id="signup-btn" class="btn btn-default">Registrati</button>
             </form>
         </div>
     </div>
@@ -87,7 +87,7 @@ require_once('php/islogged.php');
                }
             });
             if (error > 0) {
-                alertify.alert('Completa tutti i campi');
+                alertify.alert('Atom','Completa tutti i campi');
             }else{
               /* var username = $("input[name='username']").val();
                var pswd = $("input[name='password']").val();*/
@@ -105,6 +105,33 @@ require_once('php/islogged.php');
                 });
             }
         });
+        $('#signup-btn').click(function () {
+            var error = 0;
+            $('form#sign-up input').each(function () {
+                if ($(this).val() == ''){
+                    error++;
+                }
+            });
+            alert($("form#sign-up input[name='username']").val());
+            alert($("form#sign-up input[name='password']").val());
+            alert($("form#sign-up input[name='nome']").val());
+            alert($("form#sign-up input[name='cognome']").val());
+            alert($("form#sign-up input[name='email']").val());
+            if (error > 0) {
+                alertify.alert('Atom','Completa tutti i campi');
+            }else{
+                $.ajax({
+                    url:'/php/signup.php',
+                    type:'POST',
+                    data:{username:$("form#sign-up input[name='username']").val(), password:$("form#sign-up input[name='password']").val(), nome:$("form#sign-up input[name='nome']").val(), cognome:$("form#sign-up input[name='cognome']").val(), email:$("form#sign-up input[name='email']").val()},
+                    success: function (data) {
+                        if (data == "Registrazione Effettuata"){
+                            alertify.alert('Atom', "Esegui l'accesso");
+                        }
+                    }
+                })
+            }
+        })
     });
 </script>
 
