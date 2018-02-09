@@ -3,11 +3,11 @@
 require_once ('db_manage.php');
 $Connection = new db_manage();
 
-$username = $_POST['username'];
-$password = hash('sha256',$_POST['password']);
-$nome = $_POST['nome'];
-$cognome = $_POST['cognome'];
-$email = $_POST['email'];
+$username = isset($_POST['username']) ? $_POST['username'] : null;
+$password = isset($_POST['password']) ? hash('sha256',$_POST['password']) : null;
+$nome = isset($_POST['nome']) ? $_POST['nome'] : null;
+$cognome = isset($_POST['cognome']) ? $_POST['cognome'] : null;
+$email = isset($_POST['email']) ? $_POST['email'] : null;
 
 if ($username or $password or $nome or $cognome or $email == null):
     header('location /');
