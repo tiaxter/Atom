@@ -1,5 +1,3 @@
-<!-- TEST COMMENTO -->
-
 <?php
 $host = $_SERVER['REQUEST_URI'];
 
