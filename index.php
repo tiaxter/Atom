@@ -20,7 +20,7 @@ require_once('php/islogged.php');
 <?php if (!isset($_SESSION['r_hash'])): ?>
     <div id="Login-div">
         <div class="div-Login">
-            <form class="col-xs-3" method="post" action="php/login.php" onSubmit="return false;">
+            <form class="col-xs-3" id="log-in" onSubmit="return false;">
                 <div class="form-group">
                     <label for="username">Nome utente:</label>
                     <input type="text" class="form-control" id="username" placeholder="Inserisci nome utente"
@@ -37,30 +37,33 @@ require_once('php/islogged.php');
     </div>
     <div id="Signup-div">
         <div class="div-Login">
-            <div class="form-group">
-                <label for="username">Nome utente:</label>
-                <input type="text" class="form-control" id="username" placeholder="Inserisci nome utente"
-                       name="username">
-            </div>
-            <div class="form-group">
-                <label for="password">Password:</label>
-                <input type="password" class="form-control" id="password" placeholder="Inserisci la password"
-                       name="password">
-            </div>
-            <div class="form-group">
-                <label for="nome">Nome:</label>
-                <input type="text" class="form-control" id="nome" placeholder="Inserisci il nome" name="nome">
-            </div>
-            <div class="form-group">
-                <label for="cognome">Cognome:</label>
-                <input type="text" class="form-control" id="cognome" placeholder="Inserisci il cognome" name="cognome">
-            </div>
-            <div class="form-group">
-                <label for="email">E-mail:</label>
-                <input type="email" class="form-control" id="email" placeholder="Inserisci l'indirizzo mail"
-                       name="email">
-            </div>
-            <button type="submit" class="btn btn-default">Registrati</button>
+            <form class="col-xs-3" method="post" action="php/login.php" onSubmit="return false;">
+                <div class="form-group">
+                    <label for="username">Nome utente:</label>
+                    <input type="text" class="form-control" id="username" placeholder="Inserisci nome utente"
+                           name="username">
+                </div>
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" class="form-control" id="password" placeholder="Inserisci la password"
+                           name="password">
+                </div>
+                <div class="form-group">
+                    <label for="nome">Nome:</label>
+                    <input type="text" class="form-control" id="nome" placeholder="Inserisci il nome" name="nome">
+                </div>
+                <div class="form-group">
+                    <label for="cognome">Cognome:</label>
+                    <input type="text" class="form-control" id="cognome" placeholder="Inserisci il cognome"
+                           name="cognome">
+                </div>
+                <div class="form-group">
+                    <label for="email">E-mail:</label>
+                    <input type="email" class="form-control" id="email" placeholder="Inserisci l'indirizzo mail"
+                           name="email">
+                </div>
+                <button type="submit" class="btn btn-default">Registrati</button>
+            </form>
         </div>
     </div>
 <?php endif; ?>
@@ -77,7 +80,30 @@ require_once('php/islogged.php');
             $('#Signup-div').slideToggle();
         });
         $('#login-btn').click(function () {
-            alertify.alert('Completa tutti i campi');
+            var error = 0;
+            $('form#log-in input').each(function () {
+               if ($(this).val() == ''){
+                   error++;
+               }
+            });
+            if (error > 0) {
+                alertify.alert('Completa tutti i campi');
+            }else{
+              /* var username = $("input[name='username']").val();
+               var pswd = $("input[name='password']").val();*/
+                $.ajax({
+                    url: '/php/login.php',
+                    type: 'POST',
+                    data:{username : $("input[name='username']").val(), password : $("input[name='password']").val()},
+                    success: function (data) {
+                        if (data == 'Login NON Eseguito'){
+                            alertify.alert('Atom','Credenziali non corrette');
+                        }else{
+                            location.reload();
+                        }
+                    }
+                });
+            }
         });
     });
 </script>

@@ -11,8 +11,6 @@ $result = ($Connection->conn->query("SELECT * FROM user_list WHERE username='$us
 
 if ($result['password'] == $password):
 
-    echo('Login Eseguito');
-
     $random_hash = hash('sha256', rand());
 
     session_start();
