@@ -121,7 +121,7 @@ require_once('php/islogged.php');
                     data:{username:$("form#sign-up input[name='username']").val(), password:$("form#sign-up input[name='password']").val(), nome:$("form#sign-up input[name='nome']").val(), cognome:$("form#sign-up input[name='cognome']").val(), email:$("form#sign-up input[name='email']").val()},
                     success: function (data) {
                         if (data == "Registrazione Effettuata"){
-                            alertify.alert('Atom', "Esegui l'accesso");
+                            alertify.alert('Atom', "Registrazione Eseguita, Esegui l'accesso");
                         }
                     }
                 })
