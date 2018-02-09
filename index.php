@@ -112,11 +112,6 @@ require_once('php/islogged.php');
                     error++;
                 }
             });
-            alert($("form#sign-up input[name='username']").val());
-            alert($("form#sign-up input[name='password']").val());
-            alert($("form#sign-up input[name='nome']").val());
-            alert($("form#sign-up input[name='cognome']").val());
-            alert($("form#sign-up input[name='email']").val());
             if (error > 0) {
                 alertify.alert('Atom','Completa tutti i campi');
             }else{
