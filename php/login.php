@@ -11,6 +11,8 @@ $result = ($Connection->conn->query("SELECT * FROM user_list WHERE username='$us
 
 if ($result['password'] == $password):
 
+    echo('Login Eseguito');
+
     $random_hash = hash('sha256', rand());
 
     session_start();
@@ -19,8 +21,7 @@ if ($result['password'] == $password):
 
     $Connection->conn->query("UPDATE active_session SET id=$result[id], random_hash='$random_hash'");
 
-    header("location: ../");
+    /*header("location: ../");*/
 else:
-
-    header("location: ../static/incorrectlogin");
+    echo('Login NON Eseguito');
 endif;

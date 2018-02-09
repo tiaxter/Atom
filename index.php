@@ -1,6 +1,6 @@
 <?php
 ob_start("ob_gzhandler");
-require_once ('php/islogged.php');
+require_once('php/islogged.php');
 ?>
 <html>
 <head>
@@ -18,9 +18,25 @@ require_once ('php/islogged.php');
     <?php endif; ?>
 </div>
 <?php if (!isset($_SESSION['r_hash'])): ?>
-<div id="Login-div">
-    <div class="div-Login">
-        <form class="col-xs-3" method="post" action="php/login.php">
+    <div id="Login-div">
+        <div class="div-Login">
+            <form class="col-xs-3" method="post" action="php/login.php" onSubmit="return false;">
+                <div class="form-group">
+                    <label for="username">Nome utente:</label>
+                    <input type="text" class="form-control" id="username" placeholder="Inserisci nome utente"
+                           name="username">
+                </div>
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" class="form-control" id="password" placeholder="Inserisci la password"
+                           name="password">
+                </div>
+                <button id="login-btn" class="btn btn-default">Accedi</button>
+            </form>
+        </div>
+    </div>
+    <div id="Signup-div">
+        <div class="div-Login">
             <div class="form-group">
                 <label for="username">Nome utente:</label>
                 <input type="text" class="form-control" id="username" placeholder="Inserisci nome utente"
@@ -30,21 +46,6 @@ require_once ('php/islogged.php');
                 <label for="password">Password:</label>
                 <input type="password" class="form-control" id="password" placeholder="Inserisci la password"
                        name="password">
-            </div>
-            <button type="submit" class="btn btn-default">Accedi</button>
-        </form>
-    </div>
-</div>
-<div id="Signup-div">
-    <div class="div-Login">
-        <form class="col-xs-3" method="post" action="/php/signup.php">
-            <div class="form-group">
-                <label for="username">Nome utente:</label>
-                <input type="text" class="form-control" id="username" placeholder="Inserisci nome utente" name="username">
-            </div>
-            <div class="form-group">
-                <label for="password">Password:</label>
-                <input type="password" class="form-control" id="password" placeholder="Inserisci la password" name="password">
             </div>
             <div class="form-group">
                 <label for="nome">Nome:</label>
@@ -56,13 +57,13 @@ require_once ('php/islogged.php');
             </div>
             <div class="form-group">
                 <label for="email">E-mail:</label>
-                <input type="email" class="form-control" id="email" placeholder="Inserisci l'indirizzo mail" name="email">
+                <input type="email" class="form-control" id="email" placeholder="Inserisci l'indirizzo mail"
+                       name="email">
             </div>
             <button type="submit" class="btn btn-default">Registrati</button>
-        </form>
+        </div>
     </div>
-</div>
-<?php endif;?>
+<?php endif; ?>
 </body>
 
 <script>
@@ -74,6 +75,9 @@ require_once ('php/islogged.php');
         $('.signupbtn').click(function () {
             $('#Login-div').hide();
             $('#Signup-div').slideToggle();
+        });
+        $('#login-btn').click(function () {
+            alertify.alert('Completa tutti i campi');
         });
     });
 </script>
