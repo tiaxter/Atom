@@ -143,9 +143,6 @@
     #no-ep{
         opacity: 0.8;
     }
-    .mobile-search{
-        display: none;
-    }
     i:hover{
         cursor: pointer;
     }
@@ -169,9 +166,6 @@
         }
         .col-xs-3{
             width: auto;
-        }
-        .mobile-search{
-            display: block;
         }
     }
     @media screen and (max-width:1040px)
