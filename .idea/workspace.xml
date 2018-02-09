@@ -2,13 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d6ce148b-0a30-4d01-a56c-41f74bb3f3e2" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/js/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/php/choose_username.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/lista-utenti.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lista-utenti/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/lista-utenti/index.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -47,45 +43,50 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
+      <file leaf-file-name="edit.php" pinned="false" current-in-tab="false">
+        <entry file="file://G:/Stage/Day2/edit.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret lean-forward="true" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="229">
+              <caret line="79" selection-start-line="79" selection-end-line="79" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lista-utenti/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-28">
+              <caret line="31" column="56" selection-start-line="31" selection-start-column="56" selection-end-line="31" selection-end-column="56" />
+              <folding>
+                <element signature="e#1869#1917#0#HTML" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="611">
-              <caret line="71" column="54" selection-start-line="71" selection-start-column="54" selection-end-line="71" selection-end-column="54" />
+            <state relative-caret-position="124">
+              <caret line="41" column="49" selection-start-line="41" selection-start-column="49" selection-end-line="41" selection-end-column="49" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/js/index.js">
+      <file leaf-file-name="lista-utenti.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/js/lista-utenti.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="427">
-              <caret line="70" column="43" selection-start-line="70" selection-start-column="43" selection-end-line="70" selection-end-column="43" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lista-anime/index.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-477" />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="user_list" pinned="false" current-in-tab="false">
-        <entry file="das://table:/27eb4249/3a965b58-f6e3-4659-918f-505046b4bedc/atom_db.user_list">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="choose_username.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/php/choose_username.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="19" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
+            <state relative-caret-position="442">
+              <caret line="30" column="74" lean-forward="true" selection-start-line="30" selection-start-column="74" selection-end-line="30" selection-end-column="74" />
             </state>
           </provider>
         </entry>
@@ -108,7 +109,6 @@
         <option value="$PROJECT_DIR$/static/incorrectlogin.php" />
         <option value="$PROJECT_DIR$/static/unauthorized.php" />
         <option value="$PROJECT_DIR$/php/islogged.php" />
-        <option value="$PROJECT_DIR$/lista-utenti/index.php" />
         <option value="$PROJECT_DIR$/static/head.php" />
         <option value="$PROJECT_DIR$/account-setting.php" />
         <option value="$PROJECT_DIR$/account-setting/index.php" />
@@ -124,6 +124,8 @@
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/php/choose_username.php" />
         <option value="$PROJECT_DIR$/js/index.js" />
+        <option value="$PROJECT_DIR$/lista-utenti/index.php" />
+        <option value="$PROJECT_DIR$/js/lista-utenti.js" />
       </list>
     </option>
   </component>
@@ -160,6 +162,11 @@
               <item name="Atom" type="b2602c69:ProjectViewProjectNode" />
               <item name="Atom" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="lista-anime" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="Atom" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Atom" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="lista-utenti" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="Atom" type="b2602c69:ProjectViewProjectNode" />
@@ -212,12 +219,27 @@
       <workItem from="1517870248463" duration="6240000" />
       <workItem from="1517951409507" duration="4662000" />
       <workItem from="1518205902397" duration="500000" />
-      <workItem from="1518206469374" duration="4049000" />
+      <workItem from="1518206469374" duration="9271000" />
     </task>
+    <task id="LOCAL-00001" summary="Aggiunta controllo Username, se già scelto, NO BLOCCO REGISTRAZIONE, e spostato js da index.php in index.js">
+      <created>1518210632346</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1518210632346</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Controllo Disponibilità Username e Controllo Email Doppie">
+      <created>1518212334611</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1518212334611</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33461000" />
+    <option name="totallyTimeSpent" value="38683000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -271,14 +293,17 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Aggiunta controllo Username, se già scelto, NO BLOCCO REGISTRAZIONE, e spostato js da index.php in index.js" />
+    <MESSAGE value="Controllo Disponibilità Username e Controllo Email Doppie" />
+    <option name="LAST_COMMIT_MESSAGE" value="Controllo Disponibilità Username e Controllo Email Doppie" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <option name="time" value="1" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="das://table:/27eb4249/ee6d0583-a8a8-4ede-9995-3acb2196e45c/atom_db.anime_list" />
-    <entry file="file://$PROJECT_DIR$/static/head.php" />
     <entry file="uml://DATABASE/ee6d0583-a8a8-4ede-9995-3acb2196e45c.SCHEMA:atom_db">
       <provider selected="true" editor-type-id="UmlEditorProvider">
         <state>
@@ -363,7 +388,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/static/incorrectlogin.php" />
     <entry file="file://$PROJECT_DIR$/static/unauthorized.php" />
-    <entry file="file://$PROJECT_DIR$/lista-utenti/index.php" />
     <entry file="file://$PROJECT_DIR$/account-setting/index.php" />
     <entry file="file://$PROJECT_DIR$/php/changesetting.php" />
     <entry file="file://$PROJECT_DIR$/static/head.php" />
@@ -405,23 +429,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="611">
-          <caret line="71" column="54" selection-start-line="71" selection-start-column="54" selection-end-line="71" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lista-anime/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-477" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/choose_username.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="19" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
-        </state>
       </provider>
     </entry>
     <entry file="das://table:/27eb4249/3a965b58-f6e3-4659-918f-505046b4bedc/atom_db.user_list">
@@ -431,10 +441,48 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/php/choose_username.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" column="1" lean-forward="true" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="124">
+          <caret line="41" column="49" selection-start-line="41" selection-start-column="49" selection-end-line="41" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://G:/Stage/Day2/edit.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret lean-forward="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lista-utenti/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-28">
+          <caret line="31" column="56" selection-start-line="31" selection-start-column="56" selection-end-line="31" selection-end-column="56" />
+          <folding>
+            <element signature="e#1869#1917#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/js/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="427">
-          <caret line="70" column="43" selection-start-line="70" selection-start-column="43" selection-end-line="70" selection-end-column="43" />
+        <state relative-caret-position="229">
+          <caret line="79" selection-start-line="79" selection-end-line="79" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/lista-utenti.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="30" column="74" lean-forward="true" selection-start-line="30" selection-start-column="74" selection-end-line="30" selection-end-column="74" />
         </state>
       </provider>
     </entry>
