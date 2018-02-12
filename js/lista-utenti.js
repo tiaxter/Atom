@@ -65,6 +65,50 @@ $(document).ready(function () {
                     alertify.alert('Atom', 'Modifiche effettuate');
                 }
             });
-        };
+        }
+    });
+    var username_old = $("input[name='username']").val();
+    var email_old = $("input[name='email']").val();
+    $("input[name='username']").on('keyup', function () {
+        var username_chosen = $("input[name='username']").val();
+        $.ajax({
+            url:'../php/choose_username.php',
+            type:'POST',
+            data:{username : username_chosen},
+            success: function (data) {
+                if (data === "Username non disponibile"){
+                    if (username_old != username_chosen){
+                        alertify.dismissAll();
+                        alertify.set('notifier','position', 'top-center');
+                        alertify.error('Username non disponibile');
+                    }
+                }else if(data === "Spazio Vuoto"){
+                    alertify.dismissAll();
+                    alertify.set('notifier','position', 'top-center');
+                    alertify.warning('Inserisci lo username');
+                }else if(data === 'Username disponibile'){
+                    alertify.dismissAll();
+                    alertify.set('notifier','position', 'top-center');
+                    alertify.success('Username disponibile');
+                }
+            }
+        });
+    });
+    $("input[name='email']").on('keyup', function () {
+        var email_chosen = $("input[name='email']").val();
+        $.ajax({
+            url:'../php/choose_username.php',
+            type:'POST',
+            data:{email : email_chosen},
+            success: function (data) {
+                if (data === "Usata"){
+                    if (email_chosen != email_old){
+                        alertify.dismissAll();
+                        alertify.set('notifier','position', 'top-center');
+                        alertify.error('Un utente è già stato registrato con la seguente Email');
+                    }
+                }
+            }
+        });
     });
 });

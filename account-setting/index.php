@@ -14,10 +14,10 @@ require_once('../php/islogged.php');
         <h1>Modifica impostazioni</h1>
     </div>
     <div class="jumbotron" id="Login-Form-Div">
-        <form class="col-xs-3" method="post" action="../php/changesetting.php">
-            <div class="form-group" style="display: none">
+        <form class="col-xs-3" method="post" action="../php/changesetting.php" onsubmit="return false;">
+            <div class="form-group"  style="display: none">
                 <label for="id">Id:</label>
-                <input id="id" name="id_n" type="text" class="form-control" value="<?= $result_2['id'] ?>">
+                <input id="id" name="ID" type="text" class="form-control" value="<?= $result_2['id'] ?>">
             </div>
             <div class="form-group">
                 <label for="username">Nome utente:</label>
@@ -41,9 +41,10 @@ require_once('../php/islogged.php');
                 <label for="email">Email:</label>
                 <input id="email" name="email" type="text" class="form-control" value="<?= $result_2['email'] ?>">
             </div>
-            <button type="submit" class="btn btn-default">Cambia impostazioni</button
+            <button id="edit-btn" type="submit" class="btn btn-default">Cambia impostazioni</button
         </form>
     </div>
+    <script src="../js/lista-utenti.js" type="application/javascript"></script>
     </body>
     </html>
 <?php else:
