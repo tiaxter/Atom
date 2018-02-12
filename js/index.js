@@ -1,4 +1,6 @@
 $(document).ready(function () {
+    var used_mail = 0;
+    var used_username = 0;
     $('.loginbtn').click(function () {
         $('#Signup-div').hide();
         $('#Login-div').slideToggle();
@@ -38,8 +40,11 @@ $(document).ready(function () {
                 error++;
             }
         });
+        /*if (used_username > 0 && used_mail > 0){
+            alertify.alert('Atom','Username o Indirizzo Email già usati');
+        }*/
         if (error > 0) {
-            alertify.alert('Atom','Completa tutti i campi');
+                alertify.alert('Atom','Completa tutti i campi');
         }else{
             $.ajax({
                 url:'/php/signup.php',
@@ -64,14 +69,17 @@ $(document).ready(function () {
                     alertify.dismissAll();
                     alertify.set('notifier','position', 'top-center');
                     alertify.error('Username non disponibile');
+                    /*used_username = 1;*/
                 }else if(data === "Spazio Vuoto"){
                     alertify.dismissAll();
                     alertify.set('notifier','position', 'top-center');
                     alertify.warning('Inserisci lo username');
+                    /*used_username = 1;*/
                 }else if(data === 'Username disponibile'){
                     alertify.dismissAll();
                     alertify.set('notifier','position', 'top-center');
                     alertify.success('Username disponibile');
+                    /*used_username = 0;*/
                 }
             }
         });
@@ -87,7 +95,10 @@ $(document).ready(function () {
                     alertify.dismissAll();
                     alertify.set('notifier','position', 'top-center');
                     alertify.error('Un utente è già stato registrato con la seguente Email');
-                }
+                /*    used_mail = 1;
+                }else{
+                    used_mail = 0;
+                }*/
             }
         });
     });
