@@ -26,8 +26,26 @@ $(document).ready(function () {
         };
     });
     $('.edit-row').on('click', function () {
-        $('#loginForm').css({'display':'block'});
-        alertify.genericDialog($('#loginForm')[0]);
-        $("#loginForm input[name='ID']").attr('value',$(this).data('id'));
-    })
+        var id = $(this).data('id');
+        $.ajax({
+            url: '../static/edit-account.php',
+            type: 'POST',
+            data:{id:id},
+            success: function (data) {
+                $('#edit-account').html(data);
+            }
+        });
+        alertify.genericDialog($('#edit-account')[0]);
+    });
+    $(document).on('click', '#edit-btn', function () {
+        $.ajax({
+           url: '../php/changesetting.php',
+           type: 'POST',
+           data:{id_n : $("input[name='ID']").val(), username : $("input[name='username']").val(), password : $("input[name='password']").val(), nome : $("input[name='nome']").val(), cognome:$("input[name='cognome']").val(), email:$("input[name='email']").val(), ruolo:$("select[name='ruolo']").val()},
+           success : function (data) {
+               alertify.closeAll();
+               alertify.set('notifier','position', 'top-center');
+           }
+        });
+    });
 });

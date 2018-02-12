@@ -47,29 +47,11 @@ require_once('../php/islogged.php');
             <h2>Nessun utente registrato</h2>
         <?php endif; ?>
     </div>
-    <form id="loginForm" style="display: none; width: 50%; margin: auto;">
-            <div class="form-group">
-                <label for="ID">ID</label>
-                <input type="text" placeholder="ID" class="form-control" id="ID" name="ID">
-            </div>
-            <div class="form-group">
-                <label for="username">Username</label>
-                <input type="text" placeholder="Modifica Nome Utente" class="form-control" id="username" name="username">
-            </div>
-            <div class="form-group">
-                <label for="nome">Nome</label>
-                <input type="text" placeholder="Modifica Nome" class="form-control" id="nome" name="nome">
-            </div>
-            <div class="form-group">
-                <label for="cognome">Cognome</label>
-                <input type="text" placeholder="Modifica Cognome" class="form-control" id="cognome" name="cognome">
-            </div>
-            <div class="form-group">
-                <label for="email">Email</label>
-                <input type="email" placeholder="Modifica Email" class="form-control" id="email" name="email">
-            </div>
-            <button type="button">Modifica</button>
-    </form>
+    <div id="edit-account">
+    <?php
+        require ('../static/edit-account.php');
+    ?>
+    </div>
     </body>
     <script src="../js/lista-utenti.js" type="application/javascript"></script>
     </html>
