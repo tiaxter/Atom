@@ -36,7 +36,9 @@ require_once('../php/islogged.php');
                             <td><a href="mailto:<?= $user['email']; ?>"><?= $user['email']; ?></a></td>
                             <td>
                                 <button data-id="<?=$user['id']?>" class="edit-row">Modifica</button>
+                                <?php if ($utente_info['id'] != $user['id']):?>
                                 <button data-id="<?=$user['id']?>" class="delete-row">Cancella</button>
+                                <?php endif;?>
                             </td>
                         </tr>
                     <?php endforeach; ?>

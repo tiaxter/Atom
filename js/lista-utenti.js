@@ -111,4 +111,19 @@ $(document).ready(function () {
             }
         });
     });
+    $('.delete-row').on('click', function () {
+        $.ajax({
+            url:'../php/deleteaccount.php',
+            type:'POST',
+            data:{id:$(this).data('id')},
+            success: function (data) {
+                if (data === 'Utente Eliminato'){
+                    alertify.dismissAll();
+                    alertify.alert('Atom','Utente eliminato', function () {
+                        location.reload();
+                    });
+                }
+            }
+        })
+    })
 });

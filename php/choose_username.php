@@ -21,5 +21,7 @@ if (isset($_POST['email'])){
     $search_email = ($Connection->conn->query("SELECT email from user_list WHERE email='$email'"))->fetch_assoc();
     if ($search_email !== null){
         echo ('Usata');
+    }else{
+        echo ('Nuova');
     }
 }

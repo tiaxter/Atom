@@ -40,12 +40,12 @@ $(document).ready(function () {
                 error++;
             }
         });
-        /*if (used_username > 0 && used_mail > 0){
-            alertify.alert('Atom','Username o Indirizzo Email già usati');
-        }*/
-        if (error > 0) {
+        if (used_username == 1 || used_mail == 1) {
+            alertify.alert('Atom', 'Username o Indirizzo Email già usati');
+        } else if (error > 0) {
             alertify.alert('Atom', 'Completa tutti i campi');
-        } else {
+        } else if (error == 0 && used_mail == 0 && used_username == 0) {
+            $('#signup-btn').attr('disabled', true);
             $.ajax({
                 url: '/php/signup.php',
                 type: 'POST',
@@ -58,6 +58,7 @@ $(document).ready(function () {
                 },
                 success: function (data) {
                     if (data == "Registrazione Effettuata") {
+                        $('#signup-btn').attr('disabled', false);
                         alertify.alert('Atom', "Registrazione Eseguita, Esegui l'accesso");
                     }
                 }
@@ -75,17 +76,17 @@ $(document).ready(function () {
                     alertify.dismissAll();
                     alertify.set('notifier', 'position', 'top-center');
                     alertify.error('Username non disponibile');
-                    /*used_username = 1;*/
+                    used_username = 1;
                 } else if (data === "Spazio Vuoto") {
                     alertify.dismissAll();
                     alertify.set('notifier', 'position', 'top-center');
                     alertify.warning('Inserisci lo username');
-                    /*used_username = 1;*/
+                    used_username = 1;
                 } else if (data === 'Username disponibile') {
                     alertify.dismissAll();
                     alertify.set('notifier', 'position', 'top-center');
                     alertify.success('Username disponibile');
-                    /*used_username = 0;*/
+                    used_username = 0;
                 }
             }
         });
@@ -101,10 +102,9 @@ $(document).ready(function () {
                     alertify.dismissAll();
                     alertify.set('notifier', 'position', 'top-center');
                     alertify.error('Un utente è già stato registrato con la seguente Email');
-                    /*    used_mail = 1;
-                    }else{
-                        used_mail = 0;
-                    }*/
+                    used_mail = 1;
+                } else {
+                    used_mail = 0;
                 }
             }
         });
