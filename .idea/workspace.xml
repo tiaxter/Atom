@@ -45,8 +45,8 @@
       <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="42" column="10" selection-start-line="42" selection-start-column="8" selection-end-line="44" selection-end-column="11" />
+            <state relative-caret-position="407">
+              <caret line="107" column="17" lean-forward="true" selection-start-line="107" selection-start-column="17" selection-end-line="107" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -63,11 +63,8 @@
       <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/account-setting/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-35">
+            <state relative-caret-position="289">
               <caret line="17" column="59" selection-start-line="17" selection-start-column="59" selection-end-line="17" selection-end-column="59" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#form#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -75,7 +72,7 @@
       <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="328">
+            <state relative-caret-position="476">
               <caret line="28" column="18" selection-start-line="28" selection-start-column="18" selection-end-line="28" selection-end-column="18" />
             </state>
           </provider>
@@ -93,7 +90,7 @@
       <file leaf-file-name="lista-utenti.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/lista-utenti.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="475">
+            <state relative-caret-position="1819">
               <caret line="107" column="97" selection-start-line="107" selection-start-column="97" selection-end-line="107" selection-end-column="97" />
             </state>
           </provider>
@@ -102,7 +99,7 @@
       <file leaf-file-name="anime-list.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/static/anime-list.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
+            <state relative-caret-position="510">
               <caret line="30" column="22" lean-forward="true" selection-start-line="30" selection-start-column="22" selection-end-line="30" selection-end-column="22" />
             </state>
           </provider>
@@ -233,7 +230,8 @@
       <workItem from="1517951409507" duration="4662000" />
       <workItem from="1518205902397" duration="500000" />
       <workItem from="1518206469374" duration="10496000" />
-      <workItem from="1518445469283" duration="11509000" />
+      <workItem from="1518445469283" duration="11850000" />
+      <workItem from="1518541299840" duration="163000" />
     </task>
     <task id="LOCAL-00001" summary="Aggiunta controllo Username, se già scelto, NO BLOCCO REGISTRAZIONE, e spostato js da index.php in index.js">
       <created>1518210632346</created>
@@ -277,11 +275,18 @@
       <option name="project" value="LOCAL" />
       <updated>1518471489346</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Inizio limitazione creazione account con Username o Email già usati, DA SISTEMARE">
+      <created>1518472166741</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1518472166741</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="51417000" />
+    <option name="totallyTimeSpent" value="51921000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -310,19 +315,19 @@
     <layout-to-restore>
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32894737" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17397882" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32894737" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Database" order="3" weight="0.16490166" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.32894737" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Database Console" order="7" visible="true" weight="0.32894737" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -341,7 +346,8 @@
     <MESSAGE value="Inizio Sviluppo Tasto Modifica da Lista Utenti" />
     <MESSAGE value="Aggiunta Modifica Account da Parte dell'Utente Amministratore" />
     <MESSAGE value="Controllo della Scelta di Username e Email su Modifica Utenti e Modifica Impostazioni" />
-    <option name="LAST_COMMIT_MESSAGE" value="Controllo della Scelta di Username e Email su Modifica Utenti e Modifica Impostazioni" />
+    <MESSAGE value="Inizio limitazione creazione account con Username o Email già usati, DA SISTEMARE" />
+    <option name="LAST_COMMIT_MESSAGE" value="Inizio limitazione creazione account con Username o Email già usati, DA SISTEMARE" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -349,6 +355,13 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/lista-anime/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="799">
+          <caret line="47" column="49" lean-forward="true" selection-start-line="47" selection-start-column="23" selection-end-line="47" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
     <entry file="das://table:/27eb4249/ee6d0583-a8a8-4ede-9995-3acb2196e45c/atom_db.active_session" />
     <entry file="file://$PROJECT_DIR$/php/db_manage.php" />
     <entry file="file://$PROJECT_DIR$/static/navbar.php" />
@@ -444,13 +457,10 @@
     <entry file="file://G:/Stage/Day2/edit.php" />
     <entry file="file://$PROJECT_DIR$/static/anime-list.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
+        <state relative-caret-position="510">
           <caret line="30" column="22" lean-forward="true" selection-start-line="30" selection-start-column="22" selection-end-line="30" selection-end-column="22" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/search_anime.php">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/lista-utenti/index.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -463,10 +473,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
           <caret line="20" column="49" lean-forward="true" selection-start-line="20" selection-start-column="49" selection-end-line="20" selection-end-column="49" />
-          <folding>
-            <element signature="e#356#409#0#HTML" expanded="true" />
-            <element signature="e#439#461#0#HTML" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -479,18 +485,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/lista-utenti.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
+        <state relative-caret-position="1819">
           <caret line="107" column="97" selection-start-line="107" selection-start-column="97" selection-end-line="107" selection-end-column="97" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/account-setting/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-35">
+        <state relative-caret-position="289">
           <caret line="17" column="59" selection-start-line="17" selection-start-column="59" selection-end-line="17" selection-end-column="59" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#form#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -503,7 +506,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="328">
+        <state relative-caret-position="476">
           <caret line="28" column="18" selection-start-line="28" selection-start-column="18" selection-end-line="28" selection-end-column="18" />
         </state>
       </provider>
@@ -517,8 +520,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="42" column="10" selection-start-line="42" selection-start-column="8" selection-end-line="44" selection-end-column="11" />
+        <state relative-caret-position="407">
+          <caret line="107" column="17" lean-forward="true" selection-start-line="107" selection-start-column="17" selection-end-line="107" selection-end-column="17" />
         </state>
       </provider>
     </entry>

@@ -12,21 +12,21 @@ $(document).ready(function () {
     $('#login-btn').click(function () {
         var error = 0;
         $('form#log-in input').each(function () {
-            if ($(this).val() == ''){
+            if ($(this).val() == '') {
                 error++;
             }
         });
         if (error > 0) {
-            alertify.alert('Atom','Completa tutti i campi');
-        }else{
+            alertify.alert('Atom', 'Completa tutti i campi');
+        } else {
             $.ajax({
                 url: '/php/login.php',
                 type: 'POST',
-                data:{username : $("input[name='username']").val(), password : $("input[name='password']").val()},
+                data: {username: $("input[name='username']").val(), password: $("input[name='password']").val()},
                 success: function (data) {
-                    if (data == 'Login NON Eseguito'){
-                        alertify.alert('Atom','Credenziali non corrette');
-                    }else{
+                    if (data == 'Login NON Eseguito') {
+                        alertify.alert('Atom', 'Credenziali non corrette');
+                    } else {
                         location.reload();
                     }
                 }
@@ -36,7 +36,7 @@ $(document).ready(function () {
     $('#signup-btn').click(function () {
         var error = 0;
         $('form#sign-up input').each(function () {
-            if ($(this).val() == ''){
+            if ($(this).val() == '') {
                 error++;
             }
         });
@@ -44,14 +44,20 @@ $(document).ready(function () {
             alertify.alert('Atom','Username o Indirizzo Email già usati');
         }*/
         if (error > 0) {
-                alertify.alert('Atom','Completa tutti i campi');
-        }else{
+            alertify.alert('Atom', 'Completa tutti i campi');
+        } else {
             $.ajax({
-                url:'/php/signup.php',
-                type:'POST',
-                data:{username:$("form#sign-up input[name='username']").val(), password:$("form#sign-up input[name='password']").val(), nome:$("form#sign-up input[name='nome']").val(), cognome:$("form#sign-up input[name='cognome']").val(), email:$("form#sign-up input[name='email']").val()},
+                url: '/php/signup.php',
+                type: 'POST',
+                data: {
+                    username: $("form#sign-up input[name='username']").val(),
+                    password: $("form#sign-up input[name='password']").val(),
+                    nome: $("form#sign-up input[name='nome']").val(),
+                    cognome: $("form#sign-up input[name='cognome']").val(),
+                    email: $("form#sign-up input[name='email']").val()
+                },
                 success: function (data) {
-                    if (data == "Registrazione Effettuata"){
+                    if (data == "Registrazione Effettuata") {
                         alertify.alert('Atom', "Registrazione Eseguita, Esegui l'accesso");
                     }
                 }
@@ -61,23 +67,23 @@ $(document).ready(function () {
     $("form#sign-up input[name='username']").on('keyup', function () {
         var username_chosen = $("form#sign-up input[name='username']").val();
         $.ajax({
-            url:'/php/choose_username.php',
-            type:'POST',
-            data:{username : username_chosen},
+            url: '/php/choose_username.php',
+            type: 'POST',
+            data: {username: username_chosen},
             success: function (data) {
-                if (data === "Username non disponibile"){
+                if (data === "Username non disponibile") {
                     alertify.dismissAll();
-                    alertify.set('notifier','position', 'top-center');
+                    alertify.set('notifier', 'position', 'top-center');
                     alertify.error('Username non disponibile');
                     /*used_username = 1;*/
-                }else if(data === "Spazio Vuoto"){
+                } else if (data === "Spazio Vuoto") {
                     alertify.dismissAll();
-                    alertify.set('notifier','position', 'top-center');
+                    alertify.set('notifier', 'position', 'top-center');
                     alertify.warning('Inserisci lo username');
                     /*used_username = 1;*/
-                }else if(data === 'Username disponibile'){
+                } else if (data === 'Username disponibile') {
                     alertify.dismissAll();
-                    alertify.set('notifier','position', 'top-center');
+                    alertify.set('notifier', 'position', 'top-center');
                     alertify.success('Username disponibile');
                     /*used_username = 0;*/
                 }
@@ -87,18 +93,19 @@ $(document).ready(function () {
     $("form#sign-up input[name='email']").on('keyup', function () {
         var email_chosen = $("form#sign-up input[name='email']").val();
         $.ajax({
-            url:'/php/choose_username.php',
-            type:'POST',
-            data:{email : email_chosen},
+            url: '/php/choose_username.php',
+            type: 'POST',
+            data: {email: email_chosen},
             success: function (data) {
-                if (data === "Usata"){
+                if (data === "Usata") {
                     alertify.dismissAll();
-                    alertify.set('notifier','position', 'top-center');
+                    alertify.set('notifier', 'position', 'top-center');
                     alertify.error('Un utente è già stato registrato con la seguente Email');
-                /*    used_mail = 1;
-                }else{
-                    used_mail = 0;
-                }*/
+                    /*    used_mail = 1;
+                    }else{
+                        used_mail = 0;
+                    }*/
+                }
             }
         });
     });
