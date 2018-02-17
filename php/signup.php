@@ -16,6 +16,10 @@ $header = "From: atom.notreply@gmail.com <atom.notreply@gmail.com>\r\n".
     "MIME-Version: 1.0\r\n" .
     "Content-type: text/html; charset=UTF-8\r\n";
 $email_body = file_get_contents("../static/email.php");
+
+$email_body = str_replace("username",$username,$email_body);
+$email_body = str_replace("pswd",$tr_password,$email_body);
+
 $mail = mail($email,'Benvenuto',$email_body,$header);
 
 /*$Connection->conn->query("INSERT INTO user_list (id, username, password, nome, cognome, email, tipo_utente) VALUES (null, '$username', '$password', '$nome', '$cognome', '$email', 2)");*/
