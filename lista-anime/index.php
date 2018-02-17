@@ -21,7 +21,9 @@ require_once('../php/islogged.php');
             /*$('.w3-card-4').click(function () {
                 window.location = "/anime/" + $(this).data('location');
             });*/
-
+            <?php if ($utente_info['active'] == 0):?>
+            alertify.alert('Atom',"Ricordati di attivare la mail, sennò alla fine della giornata il tuo account sarà rimosso")
+            <?php endif;?>
             $(document).on('click','.w3-card-4',function () {
                 window.location = "/anime/" + $(this).data('location');
             });

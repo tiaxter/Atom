@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d6ce148b-0a30-4d01-a56c-41f74bb3f3e2" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/account-confirm/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/signup.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/signup.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/email.php" beforeDir="false" afterPath="$PROJECT_DIR$/static/email.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/anime/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/anime/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lista-anime/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/lista-anime/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/islogged.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/islogged.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -39,6 +40,20 @@
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="atom_db: schema" type="c314c289:MysqlImplModel$Schema" />
       </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="atom_db@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="atom_db: schema" type="c314c289:MysqlImplModel$Schema" />
+        <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="atom_db@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="atom_db: schema" type="c314c289:MysqlImplModel$Schema" />
+        <item name="events" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
     </expand>
     <select />
   </component>
@@ -47,8 +62,8 @@
       <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1020">
-              <caret line="60" column="63" selection-start-line="60" selection-start-column="63" selection-end-line="60" selection-end-column="63" />
+            <state relative-caret-position="441">
+              <caret line="110" column="7" lean-forward="true" selection-start-line="110" selection-start-column="7" selection-end-line="110" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -56,40 +71,74 @@
       <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" column="38" selection-start-line="13" selection-start-column="38" selection-end-line="13" selection-end-column="38" />
+            <state relative-caret-position="288">
+              <caret line="18" column="19" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="islogged.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/php/islogged.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="18" column="49" selection-start-line="18" selection-start-column="49" selection-end-line="18" selection-end-column="49" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lista-utenti/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="407">
+              <caret line="40" column="46" selection-start-line="40" selection-start-column="46" selection-end-line="40" selection-end-column="46" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lista-anime/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="391">
+              <caret line="23" column="12" lean-forward="true" selection-start-line="23" selection-start-column="12" selection-end-line="25" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/anime/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="359">
+              <caret line="59" column="30" selection-start-line="59" selection-start-column="30" selection-end-line="59" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="anime_list" pinned="false" current-in-tab="false">
+        <entry file="das://table:/27eb4249/3a965b58-f6e3-4659-918f-505046b4bedc/atom_db.anime_list">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="navbar.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/navbar.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-170" />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/account-confirm/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="39" column="17" lean-forward="true" selection-start-line="39" selection-start-column="17" selection-end-line="39" selection-end-column="17" />
+            <state relative-caret-position="663">
+              <caret line="39" column="17" selection-start-line="39" selection-start-column="17" selection-end-line="39" selection-end-column="17" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="signup.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/php/signup.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="331">
-              <caret line="21" column="76" selection-start-line="21" selection-start-column="76" selection-end-line="21" selection-end-column="76" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="lista-utenti.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/lista-utenti.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1683">
-              <caret line="99" column="45" lean-forward="true" selection-start-line="99" selection-start-column="45" selection-end-line="99" selection-end-column="45" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="user_list" pinned="false" current-in-tab="false">
+      <file leaf-file-name="user_list" pinned="false" current-in-tab="true">
         <entry file="das://table:/27eb4249/3a965b58-f6e3-4659-918f-505046b4bedc/atom_db.user_list">
           <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
             <state>
@@ -140,18 +189,22 @@
         <option value="$PROJECT_DIR$/php/changesetting.php" />
         <option value="$PROJECT_DIR$/account-setting/index.php" />
         <option value="$PROJECT_DIR$/php/choose_username.php" />
-        <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/lista-utenti/index.php" />
-        <option value="$PROJECT_DIR$/php/islogged.php" />
         <option value="$PROJECT_DIR$/php/deleteaccount.php" />
         <option value="$PROJECT_DIR$/js/lista-utenti.js" />
-        <option value="$PROJECT_DIR$/js/index.js" />
         <option value="$PROJECT_DIR$/static/email-template.html" />
         <option value="$PROJECT_DIR$/static/email.php" />
         <option value="$PROJECT_DIR$/php/confirm-registration.php" />
         <option value="$PROJECT_DIR$/php/signup.php" />
         <option value="$PROJECT_DIR$/js/confirm-registration.js" />
         <option value="$PROJECT_DIR$/account-confirm/index.php" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/3a965b58-f6e3-4659-918f-505046b4bedc/console.sql" />
+        <option value="/27eb4249/3a965b58-f6e3-4659-918f-505046b4bedc/schema/atom_db/scheduled-event/delete_event.sql" />
+        <option value="$PROJECT_DIR$/php/islogged.php" />
+        <option value="$PROJECT_DIR$/js/index.js" />
+        <option value="$PROJECT_DIR$/lista-anime/index.php" />
+        <option value="$PROJECT_DIR$/anime/index.php" />
+        <option value="$PROJECT_DIR$/index.php" />
       </list>
     </option>
   </component>
@@ -162,8 +215,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="504" />
-    <option name="y" value="-10" />
+    <option name="x" value="182" />
+    <option name="y" value="-11" />
     <option name="width" value="697" />
     <option name="height" value="735" />
   </component>
@@ -189,12 +242,17 @@
             <path>
               <item name="Atom" type="b2602c69:ProjectViewProjectNode" />
               <item name="Atom" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="anime" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="Atom" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Atom" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="js" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="Atom" type="b2602c69:ProjectViewProjectNode" />
               <item name="Atom" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="php" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="lista-anime" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
@@ -246,7 +304,7 @@
       <workItem from="1518206469374" duration="10496000" />
       <workItem from="1518445469283" duration="11850000" />
       <workItem from="1518541299840" duration="5040000" />
-      <workItem from="1518825276387" duration="16025000" />
+      <workItem from="1518825276387" duration="17779000" />
     </task>
     <task id="LOCAL-00001" summary="Aggiunta controllo Username, se già scelto, NO BLOCCO REGISTRAZIONE, e spostato js da index.php in index.js">
       <created>1518210632346</created>
@@ -318,21 +376,29 @@
       <option name="project" value="LOCAL" />
       <updated>1518856907538</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Richiesta Attivazione Account da Mail">
+      <created>1518904649748</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1518904649748</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="72823000" />
+    <option name="totallyTimeSpent" value="74577000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.36081696" />
+      <window_info anchor="bottom" id="Database Console" order="7" weight="0.32894737" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1709531" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="right" id="Database" order="3" weight="0.3422292" />
+      <window_info active="true" anchor="right" id="Database" order="3" visible="true" weight="0.34114978" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32894737" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -345,7 +411,6 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Database Console" order="7" visible="true" weight="0.32894737" />
       <window_info anchor="bottom" id="Find" order="1" />
     </layout>
     <layout-to-restore>
@@ -385,7 +450,8 @@
     <MESSAGE value="Inizio limitazione creazione account con Username o Email già usati, DA SISTEMARE" />
     <MESSAGE value="Fix Javascript" />
     <MESSAGE value="Invio Mail con HTML, finalmente" />
-    <option name="LAST_COMMIT_MESSAGE" value="Invio Mail con HTML, finalmente" />
+    <MESSAGE value="Richiesta Attivazione Account da Mail" />
+    <option name="LAST_COMMIT_MESSAGE" value="Richiesta Attivazione Account da Mail" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -393,9 +459,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/index.php" />
-    <entry file="file://$PROJECT_DIR$/php/logout.php" />
-    <entry file="file://$PROJECT_DIR$/static/unauthorized.php" />
     <entry file="das://table:/27eb4249/ee6d0583-a8a8-4ede-9995-3acb2196e45c/atom_db.user_list" />
     <entry file="file://$PROJECT_DIR$/static/navbar.php" />
     <entry file="file://$PROJECT_DIR$/php/islogged.php" />
@@ -444,7 +507,6 @@
     <entry file="das://table:/27eb4249/ee6d0583-a8a8-4ede-9995-3acb2196e45c/atom_db.user_list" />
     <entry file="das://table:/27eb4249/ee6d0583-a8a8-4ede-9995-3acb2196e45c/atom_db.user_type" />
     <entry file="das://table:/27eb4249/ee6d0583-a8a8-4ede-9995-3acb2196e45c/atom_db.active_session" />
-    <entry file="file://$PROJECT_DIR$/static/navbar.php" />
     <entry file="file://$PROJECT_DIR$/php/logout.php" />
     <entry file="file://$PROJECT_DIR$/php/login.php" />
     <entry file="file://$PROJECT_DIR$/php/db_manage.php" />
@@ -456,13 +518,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/parsing.php" />
-    <entry file="das://table:/27eb4249/3a965b58-f6e3-4659-918f-505046b4bedc/atom_db.anime_list">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://G:/Stage/Day2/edit.php" />
     <entry file="file://$PROJECT_DIR$/static/edit-account.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -510,20 +565,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/php/islogged.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="37" selection-start-line="17" selection-start-column="37" selection-end-line="17" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lista-utenti/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="40" column="46" selection-start-line="40" selection-start-column="46" selection-end-line="40" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/php/deleteaccount.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -542,13 +583,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="14" selection-end-column="105" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lista-anime/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="799">
-          <caret line="47" column="49" lean-forward="true" selection-start-line="47" selection-start-column="23" selection-end-line="47" selection-end-column="49" />
         </state>
       </provider>
     </entry>
@@ -603,7 +637,7 @@
     <entry file="file://$PROJECT_DIR$/js/lista-utenti.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1683">
-          <caret line="99" column="45" lean-forward="true" selection-start-line="99" selection-start-column="45" selection-end-line="99" selection-end-column="45" />
+          <caret line="99" column="45" selection-start-line="99" selection-start-column="45" selection-end-line="99" selection-end-column="45" />
         </state>
       </provider>
     </entry>
@@ -614,20 +648,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="38" selection-start-line="13" selection-start-column="38" selection-end-line="13" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/27eb4249/3a965b58-f6e3-4659-918f-505046b4bedc/atom_db.user_list">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/php/confirm-registration.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
@@ -635,20 +655,88 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1020">
-          <caret line="60" column="63" selection-start-line="60" selection-start-column="63" selection-end-line="60" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/confirm-registration.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="dbSrc:///27eb4249/3a965b58-f6e3-4659-918f-505046b4bedc/schema/atom_db/scheduled-event/delete_event.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="38" selection-start-column="38" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/3a965b58-f6e3-4659-918f-505046b4bedc/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="9" selection-start-line="5" selection-start-column="9" selection-end-line="5" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/account-confirm/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="39" column="17" lean-forward="true" selection-start-line="39" selection-start-column="17" selection-end-line="39" selection-end-column="17" />
+        <state relative-caret-position="663">
+          <caret line="39" column="17" selection-start-line="39" selection-start-column="17" selection-end-line="39" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/islogged.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="49" selection-start-line="18" selection-start-column="49" selection-end-line="18" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="441">
+          <caret line="110" column="7" lean-forward="true" selection-start-line="110" selection-start-column="7" selection-end-line="110" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/navbar.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-170" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lista-utenti/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="407">
+          <caret line="40" column="46" selection-start-line="40" selection-start-column="46" selection-end-line="40" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lista-anime/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="12" lean-forward="true" selection-start-line="23" selection-start-column="12" selection-end-line="25" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/anime/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="359">
+          <caret line="59" column="30" selection-start-line="59" selection-start-column="30" selection-end-line="59" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/27eb4249/3a965b58-f6e3-4659-918f-505046b4bedc/atom_db.anime_list">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="18" column="19" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/27eb4249/3a965b58-f6e3-4659-918f-505046b4bedc/atom_db.user_list">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
         </state>
       </provider>
     </entry>

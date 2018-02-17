@@ -16,6 +16,7 @@ if (isset($_SESSION['r_hash'])):
     $utente_info['cognome'] = $result_2['cognome'];
     $utente_info['email']  = $result_2['email'];
     $utente_info['tipo'] = $usertype;
+    $utente_info['active'] = $result_2['active'];
     else:
     /*Boh*/
 endif;

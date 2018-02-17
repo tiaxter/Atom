@@ -55,6 +55,9 @@ if (isset($_SESSION['r_hash'])):
                         $('#Video-Player').slideUp();
                     });
                 });
+                <?php if ($utente_info['active'] == 0):?>
+                alertify.alert('Atom',"Ricordati di attivare la mail, sennò alla fine della giornata il tuo account sarà rimosso")
+                <?php endif;?>
             </script>
         <?php endif; ?>
         </body>

@@ -12,6 +12,11 @@ require_once('php/islogged.php');
 <div class="jumbotron">
     <?php if (isset($_SESSION['r_hash'])): ?>
         <h1>Benvenuto <?= $utente_info['nome'] ?></h1>
+    <?php if ($utente_info['active'] == 0): ?>
+        <script>
+            alertify.alert('Atom', "Ricordati di attivare la mail, sennò alla fine della giornata il tuo account sarà rimosso")
+        </script>
+    <?php endif; ?>
     <?php else: ?>
         <h1>Benvenuto</h1>
         <h2>Clicca Accedi per eseguire l'accesso o Registrati per registrarti</h2>
