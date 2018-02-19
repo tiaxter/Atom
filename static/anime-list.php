@@ -47,7 +47,7 @@ if (isset($_SESSION['r_hash'])):
                 if ($(this).children('a').text() == <?=$page;?>) {
                     $(this).attr('class', 'pag-btn active');
                 }
-            })
+            });
             var search = "<?=isset($_GET['search']) ? $_GET['search'] : null?>";
             $('.pag-btn').on('click', function () {
                 var page = $(this).children('a').text();

@@ -5,10 +5,12 @@ if ($host == "/"):
     require_once('php/db_manage.php');
     require_once ('php/islogged.php');
     $logout = "php/logout";
+    $delete = "php/deleteaccount.php";
 else:
     require_once('../php/db_manage.php');
     require_once('../php/islogged.php');
     $logout = "../php/logout";
+    $delete = "../php/deleteaccount.php";
 endif;
 $Connection = new db_manage();
 
@@ -30,6 +32,27 @@ $Connection = new db_manage();
                                 class="caret"></span></a>
                     <ul class="dropdown-menu">
                         <li><a href="/account-setting">Modifica impostazioni</a></li>
+                        <li id="delete-btn"><a>Elimina account</a></li>
+                        <script>
+                            $(document).ready(function () {
+                                $('#delete-btn').click(function () {
+                                    $.ajax({
+                                        url:'<?=$delete;?>',
+                                        type:'POST',
+                                        data:{id:"<?=$utente_info['id'];?>"},
+                                        success: function (data) {
+                                            if (data == "Utente Eliminato"){
+                                                alertify.alert('Atom','Account Eliminato');
+                                                <?php
+                                                session_destroy();
+                                                ?>
+                                                location.reload();
+                                            }
+                                        }
+                                    });
+                                });
+                            });
+                        </script>
                         <li><a href="<?= $logout ?>">Disconnettiti</a></li>
                     </ul>
                 <?php if ($host == "/lista-anime/"):?>

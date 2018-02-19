@@ -11,7 +11,15 @@ $Connection = new db_manage();
 $username = isset($_GET['username']) ? $_GET['username'] : null;
 $activation_code = isset($_GET['activation_code']) ? $_GET['activation_code'] : null;
 if ($activation_code == null || $username == null):
-    echo('Dati invalidi');
+    ?>
+    <script>
+        $(document).ready(function () {
+            alertify.alert('Atom', 'Dati non corretti',function () {
+                location.replace('/');
+            });
+        });
+    </script>
+<?php
 else:
     $acc_status = ($Connection->conn->query("SELECT active from user_list WHERE username='$username' AND activation_code='$activation_code'"))->fetch_assoc();
     $acc_status = $acc_status['active'];
